@@ -1,3 +1,7 @@
+# Notes
+
+Angular creates components with 3 files in a folder with the name of the component you created. Components are recommended to be created using the "ng create component" command in your terminal. The html file is the html template, the typescript or .ts file will contain your logic. The other file is the css and the test script you probably won't touch. Services are like providers or helper functions that would provide the data stream the typescript files will manipulate.
+
 # MyApp
 
 https://angular.io/tutorial
