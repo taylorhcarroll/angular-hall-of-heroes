@@ -28,6 +28,12 @@ export class HeroDetailComponent implements OnInit {
     this.heroService.getHero(id)
       .subscribe(hero => this.hero = hero);
   }
+
+  save(): void {
+    this.heroService.updateHero(this.hero)
+      .subscribe(() => this.goBack());
+  }
+  
   //returns user to previous location in browser's history stack using location service that was imported from @angular/common
   goBack(): void {
     this.location.back();
